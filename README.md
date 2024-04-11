@@ -1,6 +1,6 @@
-# Data Engineering on Microsoft Azure
+# Azure Data Engineering
 
-Note-taking repository for Data Engineering on Microsoft Azure course (DP-203T00).
+Note-taking repository for Azure Data Engineering certification course (DP-203).
 
 ## Links
 
