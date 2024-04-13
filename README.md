@@ -13,3 +13,9 @@ Note-taking repository for Azure Data Engineer Associate certification course (D
 - [What is data engineering](./docs/module_1/data_engineering.md)
 - [Important data engineering concepts](./docs/module_1/concepts.md)
 - [Data Engineering in Microsoft Azure](./docs/module_1/azure.md)
+
+### 2. Introduction to Azure Data Lake Storage Gen2
+
+- [Introduction](./docs/module_2/introduction.md)
+- [Understand Azure Data Lake Storage Gen2](./docs/module_2/data_lake_storage_gen2.md)
+- [Enable Azure Data Lake Storage Gen2 in Azure Storage](./docs/module_2/enable_data_lake_storage_gen2.md)
