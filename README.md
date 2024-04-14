@@ -22,3 +22,9 @@ Note-taking repository for Azure Data Engineer Associate certification course (D
 - [Compare Azure Data Lake Store to Azure Blob Storage](./docs/module_2/data_lake_store_vs_blob_storage.md)
 - [Understand the stages for processing big data](./docs/module_2/processing_big_data.md)
 - [Use Azure Data Lake Storage Gen2 in data analytics workloads](./docs/module_2/analytics_workloads.md)
+
+## 3. Introduction to Azure Synapse Analytics
+
+- [What is Azure Synapse Analytics](./docs/module_3/what_is_synapse.md)
+- [How Azure Synapse Analytics works](./docs/module_3/how_works_synapse.md)
+- [When to use Azure Synapse Analytics](./docs/module_3/when_use_synapse.md)
