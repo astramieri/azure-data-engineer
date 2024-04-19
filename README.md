@@ -23,8 +23,13 @@ Note-taking repository for Azure Data Engineer Associate certification course (D
 - [Understand the stages for processing big data](./docs/module_2/processing_big_data.md)
 - [Use Azure Data Lake Storage Gen2 in data analytics workloads](./docs/module_2/analytics_workloads.md)
 
-## 3. Introduction to Azure Synapse Analytics
+### 3. Introduction to Azure Synapse Analytics
 
 - [What is Azure Synapse Analytics](./docs/module_3/what_is_synapse.md)
 - [How Azure Synapse Analytics works](./docs/module_3/how_works_synapse.md)
 - [When to use Azure Synapse Analytics](./docs/module_3/when_use_synapse.md)
+
+### 4. Analyze data in a relational data warehouse
+
+- [Introduction to data warehouse](./docs/module_4/introduction.md)
+- [Design a data warehouse schema](./docs/module_4/design_data_warehouse.md)
