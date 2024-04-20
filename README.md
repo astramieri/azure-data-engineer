@@ -35,4 +35,5 @@ Note-taking repository for Azure Data Engineer Associate certification course (D
 - [Design a data warehouse schema](./docs/module_4/design_data_warehouse.md)
 - [Create data warehouse tables](./docs/module_4/create_data_warehouse.md)
 - [Load data warehouse tables](./docs/module_4/load_data_warehouse.md)
+- [Query a data warehouse](./docs/module_4/query_data_warehouse.md)
 
