@@ -37,6 +37,14 @@ Synapse Analytics supports the following kinds of distribution:
 - **round-robin**: rows are distributed evenly across all compute nodes
 - **replicated**: a copy of the table is stored on each compute node
 
+The table type often determines which option to choose for distributing the table.
+
+| Table Type | Recommended distribution option |
+| - | - |
+| Dimension | Use replicated distribution for smaller tables to avoid data shuffling when joining to distributed fact tables. If tables are too large to store on each compute node, use hash distribution. |
+| Fact | Use hash distribution with clustered columnstore index to distribute fact tables across compute nodes. |
+| Staging | Use round-robin distribution for staging tables to evenly distribute data across compute nodes. |
+
 ## Dimension tables
 
 When you create a dimension table, ensure that the table definition includes surrogate and alternate keys as well as columns for the attributes of the dimension that you want to use to group aggregations. It's often easiest to use an **IDENTITY column** to auto-generate an incrementing surrogate key.
