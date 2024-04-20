@@ -98,3 +98,73 @@ If you intend to use a **snowflake schema** in which dimension tables are relate
         DISTRIBUTION = REPLICATE,
         CLUSTERED COLUMNSTORE INDEX
     );
+
+## Fact tables
+
+Fact tables include the keys for each dimension to which they're related, and the attributes and numeric measures for specific events or observations that you want to analyze.
+
+### Example
+
+    CREATE TABLE dbo.FactSales
+    (
+        OrderDateKey INT NOT NULL,
+        CustomerKey INT NOT NULL,
+        ProductKey INT NOT NULL,
+        StoreKey INT NOT NULL,
+        OrderNumber NVARCHAR(10) NOT NULL,
+        OrderLineItem INT NOT NULL,
+        OrderQuantity SMALLINT NOT NULL,
+        UnitPrice DECIMAL NOT NULL,
+        Discount DECIMAL NOT NULL,
+        Tax DECIMAL NOT NULL,
+        SalesAmount DECIMAL NOT NULL
+    )
+    WITH
+    (
+        DISTRIBUTION = HASH(OrderNumber),
+        CLUSTERED COLUMNSTORE INDEX
+    );
+
+## Staging Tables
+
+Staging tables are used as temporary storage for data as it's being loaded into the data warehouse. A typical pattern is to structure the table to make it as efficient as possible to ingest the data from its external source (often files in a data lake) into the relational database, and then use SQL statements to load the data from the staging tables into the dimension and fact tables.
+
+## External Tables
+
+In some cases, if the data to be loaded is in files with an appropriate structure, it can be more effective to create external tables that reference the file location. This way, the data can be read directly from the source files instead of being loaded into the relational store. 
+
+### Example
+
+    -- External data source links to data lake location
+    CREATE EXTERNAL DATA SOURCE StagedFiles
+    WITH (
+        LOCATION = 'https://mydatalake.blob.core.windows.net/data/stagedfiles/'
+    );
+    GO
+
+    -- External format specifies file format
+    CREATE EXTERNAL FILE FORMAT ParquetFormat
+    WITH (
+        FORMAT_TYPE = PARQUET,
+        DATA_COMPRESSION = 'org.apache.hadoop.io.compress.SnappyCodec'
+    );
+    GO
+
+    -- External table references files in external data source
+    CREATE EXTERNAL TABLE dbo.ExternalStageProduct
+    (
+        ProductID NVARCHAR(10) NOT NULL,
+        ProductName NVARCHAR(200) NOT NULL,
+        ProductCategory NVARCHAR(200) NOT NULL,
+        Color NVARCHAR(10),
+        Size NVARCHAR(10),
+        ListPrice DECIMAL NOT NULL,
+        Discontinued BIT NOT NULL
+    )
+    WITH
+    (
+        DATA_SOURCE = StagedFiles,
+        LOCATION = 'products/*.parquet',
+        FILE_FORMAT = ParquetFormat
+    );
+    GO
