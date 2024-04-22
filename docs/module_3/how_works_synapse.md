@@ -4,9 +4,15 @@ Azure Synapse Analytics combines a centralized service for data storage and proc
 
 ## Creating and using an Azure Synapse Analytics workspace
 
-A **Synapse Analytics Workspace** defines an instance of the Synapse Analytics service in which you can manage the services and data resources needed for your analytics solution. 
+A **Synapse Analytics workspace** defines an instance of the Synapse Analytics service in which you can manage the services and data resources needed for your analytics solution. 
 
 After creating a Synapse Analytics workspace, you can manage the services in it and perform data analytics tasks with them by using **Synapse Studio**, a web-based portal for Azure Synapse Analytics.
+
+A Synapse Analytics workspace requires two Resource Groups in your Azure subscription:
+- one for resources you explicitly create
+- one for managed resources used by the service
+
+It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
 
 ## Working with files in a data lake
 
