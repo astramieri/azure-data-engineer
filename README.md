@@ -14,9 +14,9 @@ Note-taking repository for Azure Data Engineer Associate certification course (D
 - [Data operations](./docs/module_1/data_operations.md)
 - [Data concepts](./docs/module_1/data_concepts.md)
 
-### 2. Introduction to Azure Data Lake Storage Gen2
+### 2. Azure Data Lake Storage Gen2
 
-- [Introduction to Data Lakes](./docs/module_2/introduction.md)
+- [Data Lakes](./docs/module_2/data_lakes.md)
 - [Understand Azure Data Lake Storage Gen2](./docs/module_2/data_lake_storage_gen2.md)
 - [Enable Azure Data Lake Storage Gen2 in Azure Storage](./docs/module_2/enable_data_lake_storage_gen2.md)
 - [Compare Azure Data Lake Store to Azure Blob Storage](./docs/module_2/data_lake_store_vs_blob_storage.md)
