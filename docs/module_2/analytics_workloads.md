@@ -1,4 +1,4 @@
-# Use Azure Data Lake Storage Gen2 in data analytics workloads
+# Data analytics workloads
 
 Azure Data Lake Store Gen2 is an enabling technology for multiple data analytics use cases. 
 

@@ -18,10 +18,8 @@ Note-taking repository for Azure Data Engineer Associate certification course (D
 
 - [Data Lakes](./docs/module_2/data_lakes.md)
 - [Azure Data Lake Storage Gen2](./docs/module_2/data_lake_storage_gen2.md)
-- [Enable Azure Data Lake Storage Gen2 in Azure Storage](./docs/module_2/enable_data_lake_storage_gen2.md)
-- [Compare Azure Data Lake Store to Azure Blob Storage](./docs/module_2/data_lake_store_vs_blob_storage.md)
-- [Understand the stages for processing big data](./docs/module_2/processing_big_data.md)
-- [Use Azure Data Lake Storage Gen2 in data analytics workloads](./docs/module_2/analytics_workloads.md)
+- [Stages for processing big data](./docs/module_2/processing_big_data.md)
+- [Data analytics workloads](./docs/module_2/analytics_workloads.md)
 
 ### 3. Introduction to Azure Synapse Analytics
 

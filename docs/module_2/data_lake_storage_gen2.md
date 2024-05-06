@@ -8,7 +8,13 @@ Azure Data Lake Storage builds on **Azure Blob Storage** capabilities to optimiz
 
 Azure Data Lake Storage Gen2 is not a standalone Azure service, but rather a configurable capability of a **Storage V2** (General Purpose V2) Azure Storage.
 
-To enable Azure Data Lake Storage Gen2 in an Azure Storage account, you can select the option to **Enable hierarchical namespace** in the **Advanced** page when creating the storage account in the Azure portal Alternatively, if you already have an Azure Storage account and want to enable the Azure data Lake Storage Gen2 capability, you can use the **Data Lake Gen2 upgrade wizard** in the Azure portal page for your storage account resource.
+To enable Azure Data Lake Storage Gen2 in an **Azure Storage account**, you can select the option to **Enable hierarchical namespace** in the **Advanced** page when creating the storage account in the Azure portal Alternatively, if you already have an Azure Storage account and want to enable the Azure data Lake Storage Gen2 capability, you can use the **Data Lake Gen2 upgrade wizard** in the Azure portal page for your storage account resource.
+
+## Azure Data Lake Store vs Azure Blob Storage
+
+In **Azure Blob Storage**, you can store large amounts of unstructured data ("object") in a flat namespace within a blob container. Blob names can include "/" characters to organize blobs into virtual "folders", but in terms of blob manageability the blobs are stored as a single-level hierarchy in a flat namespace.
+
+**Azure Data Lake Storage Gen2** builds on Azure Blob Storage and optimizes I/O of high-volume data by using a hierarchical namespace that organizes blob data into **directories**, and stores metadata about each directory and the files within it. This structure allows operations, such as directory renames and deletes, to be performed in a single atomic operation. Flat namespaces, by contrast, require several operations proportionate to the number of objects in the structure. Hierarchical namespaces keep the data organized, which yields better storage and retrieval performance for an analytical use case and lowers the cost of analysis.
 
 ## Azure Data Lake Storage Benefits
 
