@@ -38,3 +38,4 @@ Note-taking repository for Azure Data Engineer Associate certification course (D
 ### 5. Load data in a relational data warehouse
 
 - [Load staging tables](./docs/module_5/load_staging_tables.md)
+- [Load dimension tables](./docs/module_5/load_dimension_tables.md)
