@@ -35,3 +35,6 @@ Note-taking repository for Azure Data Engineer Associate certification course (D
 - [Load data warehouse tables](./docs/module_4/load_data_warehouse.md)
 - [Query a data warehouse](./docs/module_4/query_data_warehouse.md)
 
+### 5. Load data in a relational data warehouse
+
+- [Load staging tables](./docs/module_5/load_staging_tables.md)
