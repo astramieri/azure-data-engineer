@@ -42,3 +42,4 @@ Note-taking repository for Azure Data Engineer Associate certification course (D
 - [Load time dimension tables](./docs/module_5/load_time_dimension_tables.md)
 - [Load slowly changing dimensions](./docs/module_5/load_slowly_changing_dimensions.md)
 - [Load fact tables](./docs/module_5/load_fact_tables.md)
+- [Perform post load optimization](./docs/module_5/post_load_optimization.md)
