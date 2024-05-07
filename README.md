@@ -21,7 +21,7 @@ Note-taking repository for Azure Data Engineer Associate certification course (D
 - [Stages for processing big data](./docs/module_2/processing_big_data.md)
 - [Data analytics workloads](./docs/module_2/analytics_workloads.md)
 
-### 3. Introduction to Azure Synapse Analytics
+### 3. Azure Synapse Analytics
 
 - [What is Azure Synapse Analytics](./docs/module_3/what_is_synapse.md)
 - [How Azure Synapse Analytics works](./docs/module_3/how_works_synapse.md)
