@@ -43,3 +43,7 @@ Note-taking repository for Azure Data Engineer Associate certification course (D
 - [Load slowly changing dimensions](./docs/module_5/load_slowly_changing_dimensions.md)
 - [Load fact tables](./docs/module_5/load_fact_tables.md)
 - [Perform post load optimization](./docs/module_5/post_load_optimization.md)
+
+### 6. Building a data pipeline in Azure Synapse Analytics
+
+- [Pipelines in Azure Synapse Analytics](./docs/module_6/pipelines.md)
