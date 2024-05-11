@@ -30,3 +30,8 @@ The pipeline designer includes a set of activities, organized into categories, w
 
 While the graphical development environment is the preferred way to create a pipeline, you can also create or edit the underlying JSON definition of a pipeline. 
 
+Triggers can be defined to run the pipeline:
+- Immediately
+- At explicitly scheduled intervals
+- In response to an event (i.e. such a new data files being added to a folder)
+

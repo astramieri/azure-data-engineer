@@ -44,6 +44,7 @@ Note-taking repository for Azure Data Engineer Associate certification course (D
 - [Load fact tables](./docs/module_5/load_fact_tables.md)
 - [Perform post load optimization](./docs/module_5/post_load_optimization.md)
 
-### 6. Building a data pipeline in Azure Synapse Analytics
+### 6. Data pipeline in Azure Synapse Analytics
 
 - [Pipelines in Azure Synapse Analytics](./docs/module_6/pipelines.md)
+- [Data flows in Azure Synapse Analytics](./docs/module_6/data_flows.md)
