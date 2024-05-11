@@ -21,3 +21,12 @@ Core pipeline concepts:
     - They are defined at *workspace level* and can be shared across multiple pipelines
 
 ![Azure Pipeline](./pipeline.png)
+
+## Pipelines in Azure Synapse Studio
+
+When you create a pipeline in Azure Synapse Studio, you can use the graphical design interface.
+
+The pipeline designer includes a set of activities, organized into categories, which you can drag onto a visual design canvas. You can select each activity on the canvas and use the properties pane beneath the canvas to configure the settings for that activity. To define the logical sequence of activities, you can connect them by using the *Succeeded*, *Failed*, and *Completed* dependency conditions, which are shown as small icons on the right-hand edge of each activity.
+
+While the graphical development environment is the preferred way to create a pipeline, you can also create or edit the underlying JSON definition of a pipeline. 
+
